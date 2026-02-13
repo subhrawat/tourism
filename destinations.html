@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top tourist destinations in Uttarakhand - Mountains, Lakes, Temples and Adventure paradises.">
+    <title>Destinations in Uttarakhand - Tourism Guide</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Uttarakhand</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section style="padding: 20px;">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Destinations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="min-height: 300px;">
+        <div class="hero-content">
+            <h1>Explore Destinations</h1>
+            <p>Discover the Most Beautiful Places in Uttarakhand</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- FILTER BUTTONS -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Filter by Category</h2>
+                
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <button data-filter="all" class="btn btn-secondary" style="margin: 5px; background-color: var(--accent-color);">All</button>
+                    <button data-filter="mountain" class="btn" style="margin: 5px; background-color: #7B68EE; color: white;">Mountains</button>
+                    <button data-filter="spiritual" class="btn" style="margin: 5px; background-color: #FF6347; color: white;">Spiritual</button>
+                    <button data-filter="adventure" class="btn" style="margin: 5px; background-color: #FF9800; color: white;">Adventure</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESTINATIONS GRID -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Popular Destinations</h2>
+                
+                <div class="card-grid">
+                    <!-- Mountain Destinations -->
+                    <div class="card" data-category="mountain">
+                        <div class="card-image" style="background: linear-gradient(135deg, #7B68EE, #4B0082);">
+                            <img src="images/nainital.jpg" alt="Nainital" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Nainital</h3>
+                            <p class="card-text">A picturesque hill station with the famous Naini Lake, surrounded by snow-capped mountains. Perfect for boating, trekking, and enjoying nature.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 2,084m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="mountain">
+                        <div class="card-image" style="background: linear-gradient(135deg, #87CEEB, #4682B4);">
+                            <img src="images/auli.jpg" alt="Auli" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Auli</h3>
+                            <p class="card-text">India's premier ski destination with breathtaking Alpine views. Experience winter sports, skiing, and adventure at 3,000m altitude.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 3,000m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="mountain">
+                        <div class="card-image" style="background: linear-gradient(135deg, #90EE90, #228B22);">
+                            <img src="images/chopta.jpg" alt="Chopta" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Chopta</h3>
+                            <p class="card-text">The Mini Switzerland of India with dense forests and rolling meadows. Ideal for camping, trekking, and experiencing untouched nature.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 2,600m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spiritual Destinations -->
+                    <div class="card" data-category="spiritual">
+                        <div class="card-image" style="background: linear-gradient(135deg, #FF6347, #DC143C);">
+                            <img src="images/kedarnath.jpg" alt="Kedarnath" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Kedarnath</h3>
+                            <p class="card-text">One of the most sacred pilgrimage sites dedicated to Lord Shiva. Home to the ancient Kedarnath Temple at 3,583m altitude in the Himalayas.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 3,583m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="spiritual">
+                        <div class="card-image" style="background: linear-gradient(135deg, #FFD700, #FF8C00);">
+                            <img src="images/badrinath.jpg" alt="Badrinath" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Badrinath</h3>
+                            <p class="card-text">Sacred shrine of Lord Vishnu surrounded by mountains. Known for its natural hot water springs and spiritual significance in Hindu tradition.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 3,300m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="spiritual">
+                        <div class="card-image" style="background: linear-gradient(135deg, #00CED1, #00BFFF);">
+                            <img src="images/rishikesh.jpg" alt="Rishikesh" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Rishikesh</h3>
+                            <p class="card-text">Yoga capital of India, situated on the banks of the sacred Ganges River. Famous for yoga ashrams, meditation centers, and adventure sports.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 340m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adventure Destinations -->
+                    <div class="card" data-category="adventure">
+                        <div class="card-image" style="background: linear-gradient(135deg, #FF9800, #FF6347);">
+                            <img src="images/mussoorie.jpg" alt="Mussoorie" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Mussoorie</h3>
+                            <p class="card-text">Queen of hills offering adventure activities, scenic cable car rides, and picturesque trekking trails with panoramic views of the plains.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 2,005m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="adventure">
+                        <div class="card-image" style="background: linear-gradient(135deg, #32CD32, #228B22);">
+                            <img src="images/corbett.jpg" alt="Corbett" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Corbett National Park</h3>
+                            <p class="card-text">India's first national park known for tiger conservation and wildlife. Experience jungle safaris and spot diverse flora and fauna.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Area: 520 sq km</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="adventure">
+                        <div class="card-image" style="background: linear-gradient(135deg, #9370DB, #6A0DAD);">
+                            <img src="images/haridwar.avif" alt="Haridwar" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Haridwar</h3>
+                            <p class="card-text">Gateway to the Gods where the sacred Ganges flows into the plains. Major pilgrimage and adventure destination with river rafting opportunities.</p>
+                            <div class="card-footer">
+                                <span style="color: #666; font-size: 12px;">Elevation: 340m</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPLORE MAP SECTION -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Explore on Map</h2>
+                <p class="section-subtitle">View tourist destinations across Uttarakhand</p>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps?q=30.066753,79.0192997&z=8&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section style="background: linear-gradient(135deg, #2c5aa0 0%, #1e4620 100%); color: white; padding: 60px 20px; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 36px; margin-bottom: 20px;">Ready to Explore?</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">Check out our tour packages and booking options</p>
+                <a href="package.html" class="btn btn-primary">View Packages</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-mountain"></i> Uttarakhand Tourism</h3>
+                <p>Discover the beauty of the Land of Gods with authentic tourism experiences and unforgettable memories.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-arrow-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-arrow-right"></i> About</a></li>
+                    <li><a href="destinations.html"><i class="fas fa-arrow-right"></i> Destinations</a></li>
+                    <li><a href="package.html"><i class="fas fa-arrow-right"></i> Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Tourist Info</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Best Time to Visit</a></li>
+                    <li><a href="#"><i class="fas fa-map"></i> Getting Around</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Local Cuisine</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i> Accommodations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@uttarakhandtourism.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dehradun, Uttarakhand</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Uttarakhand Tourism. All rights reserved. | 
+                <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> | 
+                <a href="#" style="color: white; text-decoration: underline;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

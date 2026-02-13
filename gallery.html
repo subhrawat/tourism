@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery showcasing beautiful destinations and attractions in Uttarakhand.">
+    <title>Gallery - Uttarakhand Tourism</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Uttarakhand</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section style="padding: 20px;">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Gallery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="min-height: 300px;">
+        <div class="hero-content">
+            <h1>Photo Gallery</h1>
+            <p>Capture the Beauty of Uttarakhand</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- FILTER BUTTONS -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Gallery Categories</h2>
+                
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <button data-filter="all" class="btn btn-secondary" style="margin: 5px; background-color: var(--accent-color);">All</button>
+                    <button data-filter="mountains" class="btn" style="margin: 5px; background-color: #7B68EE; color: white;">Mountains</button>
+                    <button data-filter="temples" class="btn" style="margin: 5px; background-color: #FF6347; color: white;">Temples</button>
+                    <button data-filter="lakes" class="btn" style="margin: 5px; background-color: #00CED1; color: white;">Lakes</button>
+                    <button data-filter="nature" class="btn" style="margin: 5px; background-color: #32CD32; color: white;">Nature</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY GRID -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Explore Our Collection</h2>
+                
+                <div class="image-gallery">
+                    <div class="gallery-item" data-category="mountains" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/snow.jpg" alt="Snow-Capped Peaks - Auli" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Snow-Capped Peaks</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Auli Mountains</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="temples" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/kedarnath.jpg" alt="Kedarnath Temple" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Kedarnath Temple</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Sacred Shrine</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="lakes" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/nainital.jpg" alt="Naini Lake - Nainital" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Naini Lake</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Nainital</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="nature" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/chopta.jpg" alt="Green Meadows - Chopta" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Green Meadows</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Chopta</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="mountains" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/auli.jpg" alt="Winter Wonderland - Auli Ski Slopes" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Winter Wonderland</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Auli Ski Slopes</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="temples" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/badrinath.jpg" alt="Badrinath Temple" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Badrinath Temple</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Vishnu Temple</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="lakes" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/bhimtal.jpg" alt="Bhimtal - Scenic Lake" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Bhimtal</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Scenic Lake</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="nature" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/forest.jpg" alt="Forest Trek - Nature Trail" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Forest Trek</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Nature Trail</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="mountains" data-lightbox="">
+                        <div style="width: 100%; height: 250px; overflow: hidden;">
+                            <img src="images/sunrise.jpg" alt="Sunrise View - Himalayan Peak" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin: 0; color: var(--primary-color);">Sunrise View</h4>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 12px;">Himalayan Peak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATISTICS -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Our Gallery</h2>
+                
+                <div class="card-grid">
+                    <div style="text-align: center; padding: 30px; background: var(--light-color); border-radius: 8px;">
+                        <i class="fas fa-images" style="color: var(--secondary-color); font-size: 36px; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--secondary-color); font-size: 28px; font-weight: bold;">100+</h3>
+                        <p style="font-weight: 600;">Photos</p>
+                    </div>
+                    <div style="text-align: center; padding: 30px; background: var(--light-color); border-radius: 8px;">
+                        <i class="fas fa-video" style="color: var(--secondary-color); font-size: 36px; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--secondary-color); font-size: 28px; font-weight: bold;">15+</h3>
+                        <p style="font-weight: 600;">Videos</p>
+                    </div>
+                    <div style="text-align: center; padding: 30px; background: var(--light-color); border-radius: 8px;">
+                        <i class="fas fa-location-dot" style="color: var(--secondary-color); font-size: 36px; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--secondary-color); font-size: 28px; font-weight: bold;">20+</h3>
+                        <p style="font-weight: 600;">Locations</p>
+                    </div>
+                    <div style="text-align: center; padding: 30px; background: var(--light-color); border-radius: 8px;">
+                        <i class="fas fa-camera" style="color: var(--secondary-color); font-size: 36px; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--secondary-color); font-size: 28px; font-weight: bold;">50+</h3>
+                        <p style="font-weight: 600;">Contributors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section style="background: linear-gradient(135deg, #2c5aa0 0%, #1e4620 100%); color: white; padding: 60px 20px; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 36px; margin-bottom: 20px;">Share Your Experience</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">Upload your photos and videos from Uttarakhand and become part of our community</p>
+                <a href="contact.html" class="btn btn-primary">Upload Media</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-mountain"></i> Uttarakhand Tourism</h3>
+                <p>Discover the beauty of the Land of Gods with authentic tourism experiences and unforgettable memories.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-arrow-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-arrow-right"></i> About</a></li>
+                    <li><a href="destinations.html"><i class="fas fa-arrow-right"></i> Destinations</a></li>
+                    <li><a href="package.html"><i class="fas fa-arrow-right"></i> Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Tourist Info</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Best Time to Visit</a></li>
+                    <li><a href="#"><i class="fas fa-map"></i> Getting Around</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Local Cuisine</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i> Accommodations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@uttarakhandtourism.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dehradun, Uttarakhand</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Uttarakhand Tourism. All rights reserved. | 
+                <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> | 
+                <a href="#" style="color: white; text-decoration: underline;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

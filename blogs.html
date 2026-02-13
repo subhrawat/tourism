@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read travel blogs and tips for Uttarakhand tourism - Guides, reviews, and travel experiences.">
+    <title>Blogs - Uttarakhand Tourism</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Uttarakhand</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blogs.html" class="active">Blogs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section style="padding: 20px;">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Blogs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="min-height: 300px;">
+        <div class="hero-content">
+            <h1>Travel Blogs</h1>
+            <p>Stories, Tips, and Experiences from Uttarakhand</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- BLOG SEARCH & FILTER -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                
+                <div style="margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <input type="text" class="form-control search-box" placeholder="Search blogs..." style="padding: 12px 15px; border: 2px solid var(--border-color); border-radius: 5px; font-size: 16px;">
+                </div>
+
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <button data-filter="all" class="btn btn-secondary" style="margin: 5px; background-color: var(--accent-color);">All</button>
+                    <button data-filter="guide" class="btn" style="margin: 5px; background-color: #7B68EE; color: white;">Travel Guide</button>
+                    <button data-filter="review" class="btn" style="margin: 5px; background-color: #FF6347; color: white;">Reviews</button>
+                    <button data-filter="tips" class="btn" style="margin: 5px; background-color: #FF9800; color: white;">Tips</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG POSTS GRID -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <div class="card-grid">
+                    <!-- Blog 1 -->
+                    <div class="card" data-category="guide">
+                        <div class="card-image" style="background: linear-gradient(135deg, #7B68EE, #4B0082); position: relative;">
+                            <i class="fas fa-map" style="font-size: 60px; color: white; line-height: 250px; text-align: center; width: 100%;"></i>
+                            <span style="position: absolute; top: 10px; right: 10px; background: var(--secondary-color); color: white; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Travel Guide</span>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #999; font-size: 12px;">
+                                <i class="fas fa-calendar"></i> Feb 5, 2026 | <i class="fas fa-user"></i> Admin
+                            </p>
+                            <h3 class="card-title">Complete Guide to Nainital</h3>
+                            <p class="card-text">Discover everything you need to know about visiting Nainital - the lake city of Uttarakhand. From best time to visit, activities, and accommodation options.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: var(--secondary-color); font-weight: 600; font-size: 12px;">
+                                    <i class="fas fa-eye"></i> 245 views
+                                </span>
+                                <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 2 -->
+                    <div class="card" data-category="tips">
+                        <div class="card-image" style="background: linear-gradient(135deg, #FF9800, #FF6347); position: relative;">
+                            <i class="fas fa-lightbulb" style="font-size: 60px; color: white; line-height: 250px; text-align: center; width: 100%;"></i>
+                            <span style="position: absolute; top: 10px; right: 10px; background: var(--secondary-color); color: white; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Tips & Tricks</span>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #999; font-size: 12px;">
+                                <i class="fas fa-calendar"></i> Feb 3, 2026 | <i class="fas fa-user"></i> Travel Expert
+                            </p>
+                            <h3 class="card-title">10 Essential Packing Tips for Uttarakhand</h3>
+                            <p class="card-text">Learn what to pack for your Uttarakhand adventure. Essential items, weather-appropriate clothing, and gear recommendations for all seasons.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: var(--secondary-color); font-weight: 600; font-size: 12px;">
+                                    <i class="fas fa-eye"></i> 189 views
+                                </span>
+                                <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 3 -->
+                    <div class="card" data-category="review">
+                        <div class="card-image" style="background: linear-gradient(135deg, #32CD32, #228B22); position: relative;">
+                            <i class="fas fa-star" style="font-size: 60px; color: white; line-height: 250px; text-align: center; width: 100%;"></i>
+                            <span style="position: absolute; top: 10px; right: 10px; background: var(--secondary-color); color: white; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Review</span>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #999; font-size: 12px;">
+                                <i class="fas fa-calendar"></i> Jan 28, 2026 | <i class="fas fa-user"></i> Traveler
+                            </p>
+                            <h3 class="card-title">Auli Ski Resort - Experience Review</h3>
+                            <p class="card-text">My amazing experience at Auli - India's premier ski destination. Slopes, facilities, food, and why it's a must-visit destination.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: var(--secondary-color); font-weight: 600; font-size: 12px;">
+                                    <i class="fas fa-eye"></i> 312 views
+                                </span>
+                                <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 4 -->
+                    <div class="card" data-category="guide">
+                        <div class="card-image" style="background: linear-gradient(135deg, #00CED1, #00BFFF); position: relative;">
+                            <i class="fas fa-gopuram" style="font-size: 60px; color: white; line-height: 250px; text-align: center; width: 100%;"></i>
+                            <span style="position: absolute; top: 10px; right: 10px; background: var(--secondary-color); color: white; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Travel Guide</span>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #999; font-size: 12px;">
+                                <i class="fas fa-calendar"></i> Jan 22, 2026 | <i class="fas fa-user"></i> Admin
+                            </p>
+                            <h3 class="card-title">Spiritual Journey to Char Dham</h3>
+                            <p class="card-text">Complete pilgrimage guide to Char Dham - Kedarnath, Badrinath, Gangotri, and Yamunotri. Routes, timing, and spiritual significance.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: var(--secondary-color); font-weight: 600; font-size: 12px;">
+                                    <i class="fas fa-eye"></i> 428 views
+                                </span>
+                                <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 5 -->
+                    <div class="card" data-category="tips">
+                        <div class="card-image" style="background: linear-gradient(135deg, #9370DB, #6A0DAD); position: relative;">
+                            <i class="fas fa-hiking" style="font-size: 60px; color: white; line-height: 250px; text-align: center; width: 100%;"></i>
+                            <span style="position: absolute; top: 10px; right: 10px; background: var(--secondary-color); color: white; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Tips & Tricks</span>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #999; font-size: 12px;">
+                                <i class="fas fa-calendar"></i> Jan 15, 2026 | <i class="fas fa-user"></i> Adventure Guide
+                            </p>
+                            <h3 class="card-title">Best Trekking Routes in Uttarakhand</h3>
+                            <p class="card-text">Explore the top 5 trekking routes for all difficulty levels. From beginner-friendly walks to challenging high-altitude treks.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: var(--secondary-color); font-weight: 600; font-size: 12px;">
+                                    <i class="fas fa-eye"></i> 356 views
+                                </span>
+                                <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 6 -->
+                    <div class="card" data-category="review">
+                        <div class="card-image" style="background: linear-gradient(135deg, #FFD700, #FFA500); position: relative;">
+                            <i class="fas fa-utensils" style="font-size: 60px; color: white; line-height: 250px; text-align: center; width: 100%;"></i>
+                            <span style="position: absolute; top: 10px; right: 10px; background: var(--secondary-color); color: white; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Review</span>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #999; font-size: 12px;">
+                                <i class="fas fa-calendar"></i> Jan 8, 2026 | <i class="fas fa-user"></i> Food Lover
+                            </p>
+                            <h3 class="card-title">Must-Try Local Cuisines of Uttarakhand</h3>
+                            <p class="card-text">Discover authentic Uttarakhandi food - Traditional recipes, popular restaurants, and where to find the best local dishes.</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: var(--secondary-color); font-weight: 600; font-size: 12px;">
+                                    <i class="fas fa-eye"></i> 267 views
+                                </span>
+                                <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SUBSCRIPTION -->
+        <section>
+            <div class="container">
+                <div style="background: linear-gradient(135deg, #2c5aa0 0%, #1e4620 100%); color: white; padding: 50px 30px; border-radius: 8px; text-align: center;">
+                    <h2 style="margin-bottom: 15px; font-size: 28px;">Stay Updated</h2>
+                    <p style="margin-bottom: 25px; font-size: 16px;">Subscribe to our newsletter for latest travel tips, blogs, and special offers</p>
+                    
+                    <form style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+                        <input type="email" placeholder="Enter your email" required style="flex: 1; min-width: 250px; padding: 12px 15px; border: none; border-radius: 5px; font-size: 14px;">
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 30px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- RELATED POSTS -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Popular Articles</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div style="padding: 20px; background: white; border-radius: 8px; text-align: center;">
+                        <i class="fas fa-thumbs-up" style="color: var(--secondary-color); font-size: 36px; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Most Viewed</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Spiritual Journey to Char Dham</p>
+                        <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read Now →</a>
+                    </div>
+                    
+                    <div style="padding: 20px; background: white; border-radius: 8px; text-align: center;">
+                        <i class="fas fa-fire" style="color: var(--secondary-color); font-size: 36px; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Trending</h3>
+                        <p style="color: #666; margin-bottom: 15px;">10 Essential Packing Tips</p>
+                        <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read Now →</a>
+                    </div>
+                    
+                    <div style="padding: 20px; background: white; border-radius: 8px; text-align: center;">
+                        <i class="fas fa-star" style="color: var(--secondary-color); font-size: 36px; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Latest</h3>
+                        <p style="color: #666; margin-bottom: 15px;">Complete Guide to Nainital</p>
+                        <a href="#" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Read Now →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section style="background: linear-gradient(135deg, #2c5aa0 0%, #1e4620 100%); color: white; padding: 60px 20px; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 36px; margin-bottom: 20px;">Ready for Your Adventure?</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">Let our travel experts help you plan your perfect Uttarakhand trip</p>
+                <a href="contact.html" class="btn btn-primary">Start Planning</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-mountain"></i> Uttarakhand Tourism</h3>
+                <p>Discover the beauty of the Land of Gods with authentic tourism experiences and unforgettable memories.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-arrow-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-arrow-right"></i> About</a></li>
+                    <li><a href="destinations.html"><i class="fas fa-arrow-right"></i> Destinations</a></li>
+                    <li><a href="package.html"><i class="fas fa-arrow-right"></i> Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Tourist Info</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Best Time to Visit</a></li>
+                    <li><a href="#"><i class="fas fa-map"></i> Getting Around</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Local Cuisine</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i> Accommodations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@uttarakhandtourism.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dehradun, Uttarakhand</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Uttarakhand Tourism. All rights reserved. | 
+                <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> | 
+                <a href="#" style="color: white; text-decoration: underline;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

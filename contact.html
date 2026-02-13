@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Uttarakhand Tourism for bookings, queries, and travel assistance.">
+    <title>Contact Us - Uttarakhand Tourism</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Uttarakhand</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section style="padding: 20px;">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="min-height: 300px;">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in Touch with Our Travel Experts</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- CONTACT INFORMATION -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Contact Information</h2>
+                <p class="section-subtitle">Multiple ways to reach us</p>
+                
+                <div class="card-grid">
+                    <div class="feature-box">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><strong>+91 9876543210</strong></p>
+                        <p style="font-size: 12px; color: #999;">Available: Mon-Fri, 9AM-6PM</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><strong>info@uttarakhandtourism.com</strong></p>
+                        <p style="font-size: 12px; color: #999;">Response within 24 hours</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p><strong>Dehradun, Uttarakhand</strong></p>
+                        <p style="font-size: 12px; color: #999;">India 248001</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p><strong>24/7 Support</strong></p>
+                        <p style="font-size: 12px; color: #999;">Emergency: Anytime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORMS -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Send us a Message</h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you soon</p>
+                
+                <div style="max-width: 700px; margin: 40px auto;">
+                    <div class="success-message" id="contactSuccessMsg" style="display: none;">
+                        <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We'll contact you soon.
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required maxlength="50">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,}">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Select Subject --</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="general">General Query</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required minlength="10" maxlength="500"></textarea>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display: flex; align-items: center; margin-bottom: 0;">
+                                <input type="checkbox" name="newsletter" style="margin-right: 10px; width: auto;">
+                                Subscribe to our newsletter for travel updates
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING FORM -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Book Your Trip</h2>
+                <p class="section-subtitle">Reserve your package with our quick booking form</p>
+                
+                <div style="max-width: 700px; margin: 40px auto;">
+                    <div class="success-message" id="bookingSuccessMsg" style="display: none;">
+                        <i class="fas fa-check-circle"></i> Booking request submitted! Our team will confirm your reservation shortly.
+                    </div>
+
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="visitor-name">Name *</label>
+                            <input type="text" id="visitor-name" name="visitor-name" required maxlength="50">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitor-email">Email *</label>
+                            <input type="email" id="visitor-email" name="visitor-email" required>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="package">Select Package *</label>
+                            <select id="package" name="package" required>
+                                <option value="">-- Choose Package --</option>
+                                <option value="spiritual">Spiritual Journey (3 Days)</option>
+                                <option value="mountain">Mountain Explorer (4 Days)</option>
+                                <option value="adventure">Adventure Deluxe (5 Days)</option>
+                                <option value="char-dham">Char Dham Pilgrimage (6 Days)</option>
+                                <option value="weekend">Weekend Getaway (2 Days)</option>
+                                <option value="grand">Grand Tour (7 Days)</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label for="check-in">Check-in Date *</label>
+                                <input type="date" id="check-in" name="check-in" required>
+                                <div class="error-message"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="duration">Duration *</label>
+                                <select id="duration" name="duration" required>
+                                    <option value="">-- Select Duration --</option>
+                                    <option value="2">2 Days</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="4">4 Days</option>
+                                    <option value="5">5 Days</option>
+                                    <option value="6">6 Days</option>
+                                    <option value="7">7 Days</option>
+                                </select>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers *</label>
+                            <input type="number" id="travelers" name="travelers" required min="1" max="20">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rooms">Rooms Required *</label>
+                            <input type="number" id="rooms" name="rooms" required min="1" max="20">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests (Optional)</label>
+                            <textarea id="special-requests" name="special-requests" maxlength="250"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Find Us on Map</h2>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps?q=30.066753,79.0192997&z=8&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div style="max-width: 700px; margin: 40px auto;">
+                    <div style="margin-bottom: 25px; padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--light-color);">
+                        <h4 style="color: var(--primary-color); cursor: pointer;">
+                            <i class="fas fa-chevron-down" style="margin-right: 10px; color: var(--secondary-color);"></i>
+                            What is the best time to visit Uttarakhand?
+                        </h4>
+                        <p style="margin-top: 10px; display: none;">Spring (Mar-May) and Autumn (Sep-Oct) are ideal. Summer is good for adventure activities. Winter is perfect for skiing at Auli.</p>
+                    </div>
+
+                    <div style="margin-bottom: 25px; padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--light-color);">
+                        <h4 style="color: var(--primary-color); cursor: pointer;">
+                            <i class="fas fa-chevron-down" style="margin-right: 10px; color: var(--secondary-color);"></i>
+                            How do I book a package?
+                        </h4>
+                        <p style="margin-top: 10px; display: none;">Fill out our booking form above or contact us directly via phone/email. Our team will assist with customization and confirmation.</p>
+                    </div>
+
+                    <div style="margin-bottom: 25px; padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--light-color);">
+                        <h4 style="color: var(--primary-color); cursor: pointer;">
+                            <i class="fas fa-chevron-down" style="margin-right: 10px; color: var(--secondary-color);"></i>
+                            What is included in a package?
+                        </h4>
+                        <p style="margin-top: 10px; display: none;">Accommodation, meals, guided tours, activities, entrance fees, and transportation are typically included. Check individual packages for details.</p>
+                    </div>
+
+                    <div style="margin-bottom: 25px; padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--light-color);">
+                        <h4 style="color: var(--primary-color); cursor: pointer;">
+                            <i class="fas fa-chevron-down" style="margin-right: 10px; color: var(--secondary-color);"></i>
+                            Is travel insurance included?
+                        </h4>
+                        <p style="margin-top: 10px; display: none;">Travel insurance is not included by default but we recommend adding it. We can assist with insurance options at booking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section style="background: linear-gradient(135deg, #2c5aa0 0%, #1e4620 100%); color: white; padding: 60px 20px; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 36px; margin-bottom: 20px;">Still Have Questions?</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">Our travel experts are here 24/7 to help plan your perfect Uttarakhand adventure</p>
+                <a href="#contactForm" class="btn btn-primary">Contact Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-mountain"></i> Uttarakhand Tourism</h3>
+                <p>Discover the beauty of the Land of Gods with authentic tourism experiences and unforgettable memories.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-arrow-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-arrow-right"></i> About</a></li>
+                    <li><a href="destinations.html"><i class="fas fa-arrow-right"></i> Destinations</a></li>
+                    <li><a href="package.html"><i class="fas fa-arrow-right"></i> Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Tourist Info</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> Best Time to Visit</a></li>
+                    <li><a href="#"><i class="fas fa-map"></i> Getting Around</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Local Cuisine</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i> Accommodations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@uttarakhandtourism.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dehradun, Uttarakhand</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Uttarakhand Tourism. All rights reserved. | 
+                <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> | 
+                <a href="#" style="color: white; text-decoration: underline;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.container h4[style*="cursor"]').forEach(heading => {
+            heading.addEventListener('click', function() {
+                const paragraph = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (paragraph.style.display === 'none') {
+                    paragraph.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    paragraph.style.display = 'none';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
